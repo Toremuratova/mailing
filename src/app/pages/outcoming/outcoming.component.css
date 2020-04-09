@@ -1,0 +1,27 @@
+.outcoming {
+    padding: 1rem;
+}
+.outcoming_title {
+    font-size: 20px;
+    padding-bottom: 2rem;
+    font-weight: bold;
+}
+.message_item {
+    cursor: pointer;
+    padding: 1rem;
+    border: 1px solid #8d8d8d;
+    margin-bottom: 1rem;
+}
+.message_item__header{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    grid-gap: 10px;
+}
+.message_item__header___title {
+    font-size: 20px;
+    font-weight: bold;
+}
+.message_item__text {
+    margin-top: 1rem;
+}

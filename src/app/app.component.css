@@ -1,0 +1,44 @@
+.header {
+    height: 70px;
+    background: rgb(189, 189, 189);
+    padding: 0 2rem;
+    display: grid;
+    align-items: center;
+}
+.header_login {
+    display: grid;
+    justify-content: end;
+}
+.sidebar {
+    position: fixed;
+    display: grid;
+    padding: 2rem;
+    align-items: flex-start;
+    background: #3d3d3d;
+    left: 0;
+    top: 70px;
+    height: calc(100vh - 70px);
+}
+.sidebar_content {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-rows: auto auto auto;
+}
+.sidebar_content a {
+    padding: 0 2rem;
+    height: 40px;
+    display: grid;
+    color: #fff;
+    text-decoration: none;
+    align-items: center;
+}
+.sidebar_content__login {
+    background: rgb(104, 71, 158);
+}
+.content {
+    margin-left: 15rem;
+}
+.active {
+    background: rgb(255, 255, 255);
+    color: #000 !important;
+}

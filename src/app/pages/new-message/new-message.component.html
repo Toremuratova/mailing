@@ -1,0 +1,14 @@
+<div class="new">
+    <div class="new_title">Create new message</div>
+    <div class="new_item">
+        <div class="new_item__label">Message title</div>
+        <input type="text" name="title" [(ngModel)]="message.title">
+    </div>
+    <div class="new_item">
+        <div class="new_item__label">Message text</div>
+        <textarea name="" id="" cols="30" rows="10" name="text" [(ngModel)]="message.text"></textarea>
+    </div>
+    <div class="new_item__button">
+        <button (click)="onSend()">Send message</button>
+    </div>
+</div>

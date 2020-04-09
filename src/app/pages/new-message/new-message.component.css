@@ -1,0 +1,28 @@
+.new {
+    padding: 1rem;
+}
+.new_title {
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 2rem;
+}
+.new_item {
+    display: grid;
+    margin-bottom: 1rem;
+}
+.new_item__label {
+    font-size: 14px;
+}
+.new_item__button {
+    display: grid;
+}
+button {
+    height: 40px;
+    display: grid;
+    align-items: center;
+    background: rgb(104, 71, 158);
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+}

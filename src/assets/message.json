@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "author": "Elon Musk",
+        "receiver": "Haruki Murakami",
+        "title": "Book review",
+        "text": "Hey Har! I've read your book! It's awesome"
+    },
+    {
+        "id": 2,
+        "author": "Elon Musk",
+        "receiver": "Haruki Murakami",
+        "title": "Book review",
+        "text": "Hey Har! I've read your book! It's awesome"
+    },
+    {
+        "id": 3,
+        "author": "Elon Musk",
+        "receiver": "Haruki Murakami",
+        "title": "Book review",
+        "text": "Hey Har! I've read your book! It's awesome"
+    }
+]
