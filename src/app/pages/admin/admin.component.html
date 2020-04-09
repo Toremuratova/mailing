@@ -1,0 +1,20 @@
+<div class="admin">
+    <h1>
+        Admin Panel
+    </h1>
+
+    <p>
+        Here you can modify the user's list
+    </p>
+
+    <div *ngFor="let user of users">
+        <div class="item">
+            <div>
+                {{user.name}}
+            </div>
+            <div>
+                <button (click)="onDelete(user.id)">delete</button>
+            </div>
+        </div>
+    </div>
+</div>

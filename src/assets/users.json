@@ -10,5 +10,11 @@
         "name": "Haruki Murakami",
         "password": "jasdkjfnpeqrp1232@",
         "email": "haruki@murakami.com"
+    },
+    {
+        "id": 3,
+        "name": "Stephen King",
+        "password": "it1232@",
+        "email": "steph_king@gmail.com"
     }
 ]

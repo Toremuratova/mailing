@@ -1,0 +1,11 @@
+.item {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 2rem;
+    padding: 1rem;
+    border: 1px solid #d4d4d4;
+    margin-bottom: 1rem;
+}
+.admin {
+    padding: 1rem;
+}

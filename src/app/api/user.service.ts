@@ -31,8 +31,13 @@ export class UserService {
   }
 
   GetUsers(): Observable<User[]> {
-    let apiUrl = 'assets/users.json/'
+    let apiUrl = 'assets/users.json'
     return this.http.get<User[]>(apiUrl)
+  }
+
+  DeleteUser(id): Observable<User> {
+    let apiUrl = 'assets/users.json/' + id
+    return this.http.delete<User>(apiUrl)
   }
 
 }

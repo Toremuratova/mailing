@@ -9,7 +9,8 @@ import { OutcomingComponent } from './pages/outcoming/outcoming.component';
 import { NewMessageComponent } from './pages/new-message/new-message.component';
 import { LoginComponent } from './pages/login/login.component';
 import { HttpClientModule } from '@angular/common/http';
-import { SignupComponent } from './pages/signup/signup.component'
+import { SignupComponent } from './pages/signup/signup.component';
+import { AdminComponent } from './pages/admin/admin.component'
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { SignupComponent } from './pages/signup/signup.component'
     OutcomingComponent,
     NewMessageComponent,
     LoginComponent,
-    SignupComponent
+    SignupComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,

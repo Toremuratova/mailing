@@ -5,6 +5,7 @@ import { OutcomingComponent } from './pages/outcoming/outcoming.component';
 import { NewMessageComponent } from './pages/new-message/new-message.component';
 import { LoginComponent } from './pages/login/login.component';
 import { SignupComponent } from './pages/signup/signup.component';
+import { AdminComponent } from './pages/admin/admin.component';
 
 
 const routes: Routes = [
@@ -14,6 +15,7 @@ const routes: Routes = [
   {path: 'new-message', component: NewMessageComponent},
   {path: 'login', component: LoginComponent},
   {path: 'signup', component: SignupComponent},
+  {path: 'admin', component: AdminComponent}
 ];
 
 @NgModule({

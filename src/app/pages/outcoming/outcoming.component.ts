@@ -12,9 +12,13 @@ export class OutcomingComponent implements OnInit {
 
   public messages = []
 
+  private user = {
+    id: 3,
+    name: "Stephen King"
+  }
   ngOnInit(): void {
     this.messageService.getMessages().subscribe(data => {
-      this.messages = data
+      this.messages = data.filter(message => message.author == this.user.name)
       console.log(data[0])
     })
   }

@@ -8,16 +8,16 @@
     },
     {
         "id": 2,
-        "author": "Elon Musk",
-        "receiver": "Haruki Murakami",
+        "author": "Stephen King",
+        "receiver": "Elon Musk",
         "title": "Book review",
-        "text": "Hey Har! I've read your book! It's awesome"
+        "text": "Hey Elon! I've seen your new CyberTrack! It's awesome"
     },
     {
         "id": 3,
         "author": "Elon Musk",
-        "receiver": "Haruki Murakami",
+        "receiver": "Stephen King",
         "title": "Book review",
-        "text": "Hey Har! I've read your book! It's awesome"
+        "text": "Hey Steph! I've read your book! It's awesome"
     }
 ]

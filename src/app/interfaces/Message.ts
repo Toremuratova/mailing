@@ -1,6 +1,6 @@
 export interface Message {
     id: Number,
-    authror: String,
+    author: String,
     receiver: String,
     title: String,
     text: String,
