@@ -8,7 +8,8 @@ import { IncomingComponent } from './pages/incoming/incoming.component';
 import { OutcomingComponent } from './pages/outcoming/outcoming.component';
 import { NewMessageComponent } from './pages/new-message/new-message.component';
 import { LoginComponent } from './pages/login/login.component';
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
+import { SignupComponent } from './pages/signup/signup.component'
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { HttpClientModule } from '@angular/common/http'
     IncomingComponent,
     OutcomingComponent,
     NewMessageComponent,
-    LoginComponent
+    LoginComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,

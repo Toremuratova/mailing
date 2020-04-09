@@ -4,6 +4,7 @@ import { IncomingComponent } from './pages/incoming/incoming.component';
 import { OutcomingComponent } from './pages/outcoming/outcoming.component';
 import { NewMessageComponent } from './pages/new-message/new-message.component';
 import { LoginComponent } from './pages/login/login.component';
+import { SignupComponent } from './pages/signup/signup.component';
 
 
 const routes: Routes = [
@@ -11,7 +12,8 @@ const routes: Routes = [
   {path: 'incoming', component: IncomingComponent},
   {path: 'outcoming', component: OutcomingComponent},
   {path: 'new-message', component: NewMessageComponent},
-  {path: 'login', component: LoginComponent}
+  {path: 'login', component: LoginComponent},
+  {path: 'signup', component: SignupComponent},
 ];
 
 @NgModule({

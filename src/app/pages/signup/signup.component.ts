@@ -2,23 +2,24 @@ import { Component, OnInit } from '@angular/core';
 import { UserService } from 'src/app/api/user.service';
 
 @Component({
-  selector: 'app-login',
-  templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css']
+  selector: 'app-signup',
+  templateUrl: './signup.component.html',
+  styleUrls: ['./signup.component.css']
 })
-export class LoginComponent implements OnInit {
+export class SignupComponent implements OnInit {
 
   constructor(private userService: UserService) { }
 
   public user = {
     email: '',
+    name: '',
     password: ''
   }
 
   ngOnInit(): void {
   }
 
-  onLogin(): void {
-    this.userService.Login(this.user)
+  onRegister(): void {
+    this.userService.Register(this.user)
   }
 }

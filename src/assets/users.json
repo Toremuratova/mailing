@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "name": "Elon Musk",
+        "password": "oireunfienr",
+        "email": "elon@spaceX.com"
+    },
+    {
+        "id": 2,
+        "name": "Haruki Murakami",
+        "password": "jasdkjfnpeqrp1232@",
+        "email": "haruki@murakami.com"
+    }
+]
