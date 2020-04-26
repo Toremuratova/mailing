@@ -19,6 +19,6 @@ export class AdminComponent implements OnInit {
 
   onDelete(id): void {
     console.log(id)
-    this.userService.DeleteUser(id)
+    this.userService.DeleteUser(id).subscribe()
   }
 }

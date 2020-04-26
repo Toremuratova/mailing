@@ -10,18 +10,19 @@ export class UserService {
 
   constructor(private http: HttpClient) { }
 
-  private url = '/api/user/'
+  private url = 'http://localhost:8000/api/user/'
   private httpHeaders = {
-    headers: new HttpHeaders({ 'Content-Type': 'applcation/json' })
+    headers: new HttpHeaders({ 'Content-Type': 'application/json' })
   }
 
   Login(user): Observable<User> {
-    let apiUrl = this.url + 'login'
+    let apiUrl = this.url + 'login/'
+    this.http.post<any>(this.url + 'signin/', user, this.httpHeaders).subscribe()
     return this.http.post<User>(apiUrl, user, this.httpHeaders)
   }
 
   Register(user): Observable<User> {
-    let apiUrl = this.url + 'register'
+    let apiUrl = this.url + 'register/'
     return this.http.post<User>(apiUrl, user, this.httpHeaders)
   }
 
@@ -31,13 +32,16 @@ export class UserService {
   }
 
   GetUsers(): Observable<User[]> {
-    let apiUrl = 'assets/users.json'
-    return this.http.get<User[]>(apiUrl)
+    return this.http.get<User[]>(this.url)
   }
 
   DeleteUser(id): Observable<User> {
-    let apiUrl = 'assets/users.json/' + id
+    let apiUrl = this.url + id //set url
     return this.http.delete<User>(apiUrl)
+  }
+
+  EditUsername(user): Observable<User> {
+    return this.http.put<User>(this.url + user.id + '/', user, this.httpHeaders)
   }
 
 }

@@ -12,7 +12,7 @@ export class SignupComponent implements OnInit {
 
   public user = {
     email: '',
-    name: '',
+    username: '',
     password: ''
   }
 
@@ -20,6 +20,6 @@ export class SignupComponent implements OnInit {
   }
 
   onRegister(): void {
-    this.userService.Register(this.user)
+    this.userService.Register(this.user).subscribe()
   }
 }

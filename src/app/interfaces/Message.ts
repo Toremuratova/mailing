@@ -1,7 +1,13 @@
 export interface Message {
-    id: Number,
-    author: String,
-    receiver: String,
-    title: String,
-    text: String,
+    id: number,
+    author: {
+        id: number,
+        name: string
+    },
+    receiver: {
+        id: number,
+        name: string
+    }
+    title: string,
+    text: string,
 }

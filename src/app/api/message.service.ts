@@ -10,7 +10,7 @@ export class MessageService {
 
   constructor(private http: HttpClient) { }
 
-  private url = 'assets/message.json'
+  private url = 'http://localhost:8000/api/mail/'
   private httpHeaders = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' })
   }
@@ -22,4 +22,13 @@ export class MessageService {
   sendMessage(message): Observable<Message> {
     return this.http.post<Message>(this.url, message, this.httpHeaders)
   }
+
+  saveDraft(message): Observable<Message> {
+    return this.http.post<Message>(this.url + 'drafts/', message, this.httpHeaders)
+  }
+
+  getDrafts(): Observable<any[]> {
+    return this.http.get<any[]>(this.url + 'drafts/')
+  }
+
 }

@@ -5,10 +5,15 @@
         <input type="text" name="title" [(ngModel)]="message.title">
     </div>
     <div class="new_item">
+        <div class="new_item__label">Receiver</div>
+        <input type="text" name="receiver" [(ngModel)]="message.receiver">
+    </div>
+    <div class="new_item">
         <div class="new_item__label">Message text</div>
         <textarea name="" id="" cols="30" rows="10" name="text" [(ngModel)]="message.text"></textarea>
     </div>
     <div class="new_item__button">
         <button (click)="onSend()">Send message</button>
+        <button (click)="onDraft()">Draft</button>
     </div>
-</div>
+</div> 

@@ -12,14 +12,15 @@ export class OutcomingComponent implements OnInit {
 
   public messages = []
 
-  private user = {
-    id: 3,
-    name: "Stephen King"
-  }
+  // private user = {
+    // id: 3,
+    // name: "Stephen King"
+  // }
   ngOnInit(): void {
+    let user = localStorage.getItem('name')
     this.messageService.getMessages().subscribe(data => {
-      this.messages = data.filter(message => message.author == this.user.name)
-      console.log(data[0])
+      this.messages = data.filter(message => message.author.name == user)
+      // console.log(data[0])
     })
   }
 }

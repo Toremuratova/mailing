@@ -1,7 +1,12 @@
 <div class="header">
   <div class="logo">Message Box</div>
   <div class="header_login">
-    <button routerLink="/login">Login</button>
+    <div *ngIf="!active">
+      <button routerLink="/login">Login</button>
+    </div>
+    <div *ngIf="active">
+      <button (click)="onLogout()">Logout</button>
+    </div>
     <button routerLink="/signup">Sign Up</button>
   </div>
 </div>
@@ -10,6 +15,10 @@
     <a routerLink="/new-message" class="sidebar_content__login" routerLinkActive="active">new message</a>
     <a routerLink="/incoming" routerLinkActive="active">incoming</a>
     <a routerLink="/outcoming" routerLinkActive="active">outcoming</a>
+    <a routerLink="/draft" routerLinkActive="active">draft</a>
+    <hr/>
+    <input type="text" name="username" [(ngModel)]="setting.username">
+    <button (click)="onEdit()">Edit username</button>
   </div>
 </div>
 <div class="content">
